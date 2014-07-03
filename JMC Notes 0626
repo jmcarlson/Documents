@@ -1,0 +1,55 @@
+JMC Notes 0626
+
+- jQuery event handlers
+
+- Callback function: system called function.  I pass function to event handler
+	and the browser actually calls it
+- Event handling parts:
+	- element(s) to listen on
+	- type of event
+	- function to execute (callback)
+
+- Class demo:
+	- Format: "$(selector).on('event name', callback() {})"
+	- check selector in browser for validity.  ex) $('h1')
+	- Be careful with global vs event function variables
+	  variables inside event func(callback) won't be accessible
+	  via the console
+	- can register event handler in console by pasting function
+	  into the console
+	- "one" event handler: $(selector).one('event', func(){})
+	- Short handing: "$(selector).click(func() {} )"
+	- Research "hover" short hand
+	- Recommended using ".on" notation
+	- Not all events support short hand
+	- Callbacks can accept parameters/arguments
+	  Common syntax is "$(selector).click(func(e) {} )" where 'e' is event arguments
+	- Access 'e' object data:  "e.clientX"
+	- Research arguments object
+	- "arguments" is reserved word and contains all data from event in an array
+	- if event object isn't named, use 'arguments[0]' array
+	- Prevent all anchor tags from navigating
+	  Syntax: $('a').on('click', func(e) {e.preventDefault} )
+	  *** may see "return false", same thing as "e.preventDefault"
+	- global scope of window is $(this) w/o selector scoping
+	- "this" and "that" concept coming...
+	- !!!! Becareful with changing html with jQuery.  If js code references an element and
+	  then it's changed after load, it won't work.  Event delegation.
+	- Event handlers load once and reference/lookup elements just once(at page load)
+	- Event delegation: 
+		* original: $('button').on('click', func() {})
+		* delegated: $(document).on('click', 'button', func() {
+			console.log( $(this).text() );
+		})
+
+- Common events:
+	- click
+	- mousedown, mouseup
+	- keydown, keyup
+	- mouseover, mouseout
+	- mousemove
+	- resize
+	- scroll
+	- focus, blur (used with input elements)
+	- change
+	- submit

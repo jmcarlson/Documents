@@ -1,0 +1,67 @@
+JMC Notes 0620
+
+- Responsive Design: device portability.  Single website for all devices
+- jquery mobile?
+- Retina displays pack twice nbr of pixels in same space.  So images, etc
+  may have issues if coding for standard/non-retina displays
+- retina.js.  Helper library to switch images depending on display density
+- Detecting pixel density?
+- iOS turns off javascript as you scroll for performance...
+- 'hover' doesn't work on touch screens
+- wifi: working online, offline, hybrid
+- Handling fragmentation(device, pixel density, etc)?
+- "word widow".  Word in paragraph hanging out on the side
+- "mobile first approach".  Target or develop for smallest device first
+- "psd".  Photoshop Document
+- CSS-wise, use percents in layouts
+- "em", "rem".  Adjust fonts
+- Media query break points:  categorize screen sizes; setup ranges(small, medium, large screens)
+- Media query is not a tool, it's a concept
+- Research "web services for all" idea versus "responsive design"
+- 
+- Classroom demo notes:
+	- 320 wide for mobile devices
+	- With Chrome developer tools, can shrink screen down more than w/o
+	- Chrome also has emulation modes ("show drawer")
+	- Ok Chrome rules!!!!!
+	- media query in CSS example: "@media screen and (min-width: 200px){ <CSS codes> }"
+	- media queries do NOT affect specificity
+	- can add conditional css links in html?
+	- html meta tags: "name=viewport"
+		- content=user-scalable=no (can't adjust view/ can't zoom)
+		- initial-scale=1.0
+		- minimum-scale=1.0
+		- maximum-scale=1.0
+		- width=device???
+	- Google Analytics will give you specs on devices that access your site
+	- "Modernizr".  Library to help manage browser feature support(border-radius, for example)
+		**** If feature is supported(realtime), it will use it or branch
+	- "mediaqueri.es".  Website that illustrates diff break points
+- Classroom "grid" demo notes:
+	- CSS "*{box-sizing:border-box;}" (border box model, padding included in width)
+	- CSS "[class *= 'col-']{float: left;}" (find all elements with class="col-???")
+
+- Weekly review:
+	- DOCTYPE, Normalize, CDN
+	- git: init, status, add, commit, log, push, pull, clone
+	- CSS: display(none, block, inline, inline-block, table, table-cell)
+	- CSS: overflow(*visible, auto, scroll, hidden)
+	- CSS: position(*static, fixed(to window), absolute(to parent), relative).  Only way to overlap objects
+	- CSS: float(*none, left, right)
+	- CSS: clear(left, right, both).  Resets the float
+	- Centering: inline h & v, block h & v
+	- Block formatting contexts: floated, non-visible overflow, display inline-block, fixed/absolute
+	- Don't use position: absolute unless really necessary
+	- Don't set widths and heights to absolute values(10px, for example)
+	- Front-end performance: minification, concatenation(merge files), spritesheets, image compression(headers, size)
+	- Preprocessors: Sass(vars, nesting, math), Prepros tool
+	- Responsive design: fragmentation, grid system, media queries, Chrome device emulation
+	- 
+
+
+
+
+
+
+
+

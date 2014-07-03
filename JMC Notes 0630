@@ -1,0 +1,28 @@
+JMC Notes 0630
+
+Deeper into Functions
+
+- Scenario: function receives too few arguments.  Missing argument will 
+  be undefined.  *** Issue if missing arg is in the front.  test this...
+- Scenario: function receives too many arguments.  "arguments" array contains
+  all arguments passed into the function regardless
+- "arguments" is array-like but isn't array; can't use array methods
+- "arguments.length" property will work along with other properties
+- "arguments" and jQuery object("$('.button')") is similar type
+- Defaulting an argument: too few args
+  if(!city) { city = "Boulder"} is the same as
+  city = city || "Boulder";  (more common)
+  people.push({name: name, city: city || "Boulder"})
+- Terms: truthy and falsey???
+- Scenario: too many args
+  var sum = function() {
+    var total = 0;
+    for(var i = 0; i < arguments.length; i++) {
+      total += arguments[i];
+    }
+    return total;
+  }
+
+- Recommendation: if nbr of args is variable, use arrays because
+  you can take advantage of the array methods(slice, map, etc)
+- 

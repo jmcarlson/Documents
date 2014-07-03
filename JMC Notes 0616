@@ -1,0 +1,28 @@
+Notes - 06/16
+
+- put js refs in body not head.  must load it before page if in head
+- html 5 vs xhtml.  xhtml is old, use html 5
+- don't need closing tags; DOCTYPE, meta, link
+- cdnjs.cloudflare.com? (content delivery network, CDN)
+- CDN's are distributed and super fast for loading.  Great for caching if common files are used
+- terms: tags, elements(<head> section as a whole)
+- Default CSS settings are vendor/browser based.  Should override defaults just in case
+- Use "CSS Reset" stylesheet to zero out/reset the default values
+- Use Normalize stylesheet to reset and then default to standard settings (best practice)
+*** normalize.css(MIT), for example
+*** Use 'minified' files; normalize.min.css
+*** CNN uses hplib-min.css
+- CTL-ALT-i opens developer tools in Chrome
+- Firefox has 3D model view of a site in Inspector tools
+- "git init" to create initial repo
+- "git add -A" adds files to staging area(not committed).  Includes adds and deletes here
+- git config --global user.email "you@example.com"
+- git config --global user.name "Your Name"
+- git "HEAD" is most recent commit
+- git reset removes file from staging area; opposite of add.  doesn't affect commit history
+- git remote add is local setup only; does not make connection
+- git "origin" is name of the remote.  name is arbritrary; set by "git remote add"
+- git push will not work if changes on the remote side exist.  Unless, the changes
+  are being pushed from the local repo as well.
+- CSS when transforming focus on an element that is not going to change.  So, use parent element for a transform since it will not be changing.  Ex) .portfolio-item:hover .front {} versus .front:hover {}
+- 

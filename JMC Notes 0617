@@ -1,0 +1,11 @@
+JMC Notes 0617
+
+- Most used CSS commands: display, position, float, 
+- Default behavior: block elements are stacked on top of each other(w line breaks)
+  and have width of 100%
+- <h*>, <p> are block level elements
+- "display: inline" displays right to left.  Inline elements can't have width/height
+  values.  Size is based on the data.  Will wrap based on container size
+- Yeoman: sudo npm install -g yo, sudo npm install -g generator-refactoru-html
+- Yeoman: "yo refactoru-html"
+- 

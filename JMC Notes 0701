@@ -1,0 +1,38 @@
+JMC Notes 0701
+
+jQuery Demo
+
+- Sublime Plain Tasks
+- User Voice (rating/feedback system)
+- Sublime Docblocker.  Adds comment templates.  Type "/** <tab>"
+- Sublime snippets
+- Good to prototype the display(html, css)
+- append() vs. appendTo. Args are switched
+- var newElm = $('li') code creates new DOM element.  Does not
+  need to exist in the existing document
+- newElm.appendTo('#ul').  Example of appendTo.  Adds 'li' to 'ul'
+- General approach:  put utilities/non-event functions above 
+  document ready.  Include globals there also
+- Forms approach: create submit function outside of event handler
+  $('#new-game').on('submit', newGameSubmit);  Do NOT call the function with '()'
+  var gameTitle = $(this).find('[name=title]').val();  Gets form value
+- "placeholder" (html5).  Don't need labels for form input fields
+- Use closest() where possible instead of parent()
+- Research jQuery "data" method
+- splice().  adds/removes item in an array
+- 
+
+
+Form: (separate divs so each input is on new line)
+
+<form id="new-game">
+	<div class="input-group">
+		<input name=title type="text" placeholder="Game Title"
+	</div>
+	<div class="input-group">
+		<input name=description type="text" placeholder="Game Desc"
+	</div>
+	<div class="input-group">
+		<input type="submit" value="Add Game"
+	</div>
+</form>

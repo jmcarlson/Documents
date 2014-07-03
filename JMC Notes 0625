@@ -1,0 +1,38 @@
+JMC Notes 0625
+
+- jQuery just a library.  Not a mod to javascript core
+- DOM: document object model.  Abstract of HTML document in memory
+- jQuery benefits: DOM manipulation, event handling, Ajax, utilities
+- jQuery v2x doesn't support IE 6, 7, or 8
+- global versus namespaces?
+*** globals can introduce naming conflicts.  Ex) findSomething()
+*** Namespacing(there are other techniques) wraps functions into object.
+	Ex) myLib.findSomething()
+- jQuery developers mapped "$" for the library.  "var $ = jQuery" (essentially)
+- "$" is a 'function object'.  So, $.isArray() works.
+
+- "$" function: $( )
+- jQuery uses similar functionality as CSS to lookup tags
+- $('.button') returns elements with class="button".  Correction next.
+- $() returns a jQuery objects with additional functionality
+- "buttons.css('color', 'red');" changes color after the page has been loaded
+- Using 'id' in html for jQuery only is faster than using 'class'
+- Use 'id' for jQuery, use 'class' for CSS
+- Ex) $('h1').css('color', 'blue').  Changes all h1 headers to color blue
+- Combination selector ex) "$('.nav .disabled a').css('color', 'green')"
+- Useful: "$('.nav .disabled a').length" to test selectors
+- Common methods(used with selectors):
+	- width, height (NOT CSS selectors).  Ex) $().height();
+	- '<select>:first' returns the first element only
+	- hide, show
+	- fadeOut, fadeIn
+	- removeClass, addClass, toggleClass(removes if exists, adds if doesn't exist)
+	- attr (change attribute like href, etc)
+	- text (cannot include tags! use .html())
+	- html
+	- append (adds text, not tags, to the end)
+	- val (returns value from a form element(textbox, etc)).  Changes 'value' attribute of form elements
+- Taggle CSS classes via jQuery but keep defs in *.css files
+- Some methods above are "polymorphic methods".  Ex) button.css('color') returns the 
+	color of the element, does NOT change it
+- Example of looking up values: refactoru student site forces external links to open in new tab

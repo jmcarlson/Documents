@@ -1,0 +1,24 @@
+JMC Notes 0619
+
+- "Minify" css files for performance. Remove spaces and new lines
+- "Source maps" give you line level details
+- cssminifier.com.  Site to remove spaces and comments
+- Every CSS file listed in html is an individual request to get that file
+*** Use concatenation to combine all files into a single CSS file
+- "Grunt" will automate the above for you.  More to come later in class
+- Image file sizes.  Compress files to actual size on the web page.  Saves a lot
+- www.smushit.com.  Site will strip out the meta data in an image files
+- "draeton.github.io/stitches"  Creates sprite sheet of a bunch of icons.  Good
+  for performance
+- Using sprite sheet via CSS,
+	background-image: url(spritesheet.png);
+	background-repeat: no-repeat;
+	display: block;
+- Preprocessors:  Shortcut scripts for generating other code.  
+*** Sass:  CSS superscript.  Allows variables for colors, etc.  Quicker to make changes
+*** Jade:  ?
+*** Coffeescript:  Javascript
+- Sassmeister.com.  Class demo
+- Preprocessors aren't used in runtime environment?  Only during development.
+- alphapixels.com/prepros (free)
+- incident57.com/codekit (not free)

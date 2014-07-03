@@ -1,0 +1,32 @@
+JMC Notes 0627
+
+DOM Traversal
+
+- method chaining: 
+	$('p').css('color', 'red').addClass('active').on('click', function() {})
+
+- $('li:first') returns first 'li' element
+
+- Traversal methods: find(), children(), siblings(), parent(), closest()
+- chaining ex) $('li:first').addClass('active').siblings().removeClass('active')
+  *** technique to ensure only one item is active
+- closest() will search/include itself
+
+DOM Creation:
+
+- append(), prepend(), after(), before(), clone(), empty(), remove()
+- Can pass html to the above to create elements on the page
+- empty() removes element children, does not return them
+- remove() removes element specified, returns it and all children
+- save technique:
+	var trash = $('ul')
+	$('ul').remove()
+	$('body').append(trash)
+
+- console.dir() prints object dump to the console
+
+- each() loops through each element returned and applies a function to it
+	$('li').each(function(index, domElem) {
+		$(this).append('!!');
+	})
+	*** Could leave out the 'index, domElem' and use $(this)

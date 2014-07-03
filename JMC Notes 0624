@@ -1,0 +1,7 @@
+JMC Notes 0624
+
+- Functions
+- Anonymous function definitions: "var funcName = function() {}"
+- Old school function def still supported.  Either works
+- Every function returns something.  If not specified, func returns 'undefined'
+- "lexical scoping"

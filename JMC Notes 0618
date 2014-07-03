@@ -1,0 +1,14 @@
+JMC Notes 0618
+
+- Keep layouts as dynamic as possible.  Be careful with margin, padding, position:absolute
+- Layout tip: use percentages for layout (responsive design)
+- Github: RefactorU/student-sample-code
+- rgba(255,50,25,0.9).  The last value is opacity
+- a float will collapse the default width.  Must specify the width
+- block formatting context: ("The Clearfix")
+*** scenarios: float, display:inline-block, position:fixed|absolute, overflow:*(except visible)
+*** effects: 1) ?  2) always contains other floats and full margin box
+- Bad practice: layout dependencies, tightly coupled layout design.  Creates fragile code...
+- Margin collapse: siblings, parent-child
+- Default image display is "inline"
+- 

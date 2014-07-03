@@ -1,0 +1,45 @@
+JMC Notes 0623
+
+- Javascript!!!!!
+- "Inifinite scroll".  Does refreshes when you reach the bottom of a page.  
+  Content isn't hidden; doesn't exist.  Uses AJAX
+- Trello.com website
+- http://physicsketch.appspot.com.  Open canvas that has physics properties applied.  super cool
+- Question: element:hover versus javascript onclick?
+- Put <script> tags towards end of body section.  Otherwise, script will load before
+  content
+- javascript: multiple spaces are ignored
+- metaraine.github.io/gettingStartedJS/#/4
+- javascript types: 5 primitive types aka "builtin types"
+  - string
+  - number
+  - boolean
+  - null.  useful for knowing a var is set but is blank.
+  - undefined.  var defs w/o values are set to this.  can assign the value
+
+- javascript types: non-primitive types
+  - arrays: arr.reverse(), arr.push('new') returns new length, arr.pop() removes last item
+  - arrays: arr.unshift('new') adds to beginning of list, arr.shift() removes first item 
+  - arrays: arr.sort(), arr.slice(starting index,end index not including last)
+  - arrays: some methods/functions have 'side effects'.  reverse() modifies original, slice 
+    does not
+  - arrays: arr.join(', ') combines list into single, double quoted one
+
+- javascript types: objects
+  - "key value pair"  -> "var array = {key1:"value1",key2:"value2"}"
+  - arrays have numeric indices, objects have string indices!
+  - objects values can be null and/or undefined
+  - Example:
+    	var cat = {
+    		name: 'Garfield',
+    		colors: ['orange', 'white']
+    	}
+    	cat['colors'].length
+    	cat['colors'][0] (bracket notation for individual color)
+  - "dot notation".  valid identifier, no spaces, doesn't start with #, no dashes
+  - "dot notation".  cat['name'] = cat.name
+  - "delete cat['name']" removes property value pair
+  - As long as it's valid identifier, can add/remove/etc with both bracket and dot notations
+  - "Object.keys(<objectname>)" returns all the key values
+  - Object properties(name, color, age, etc) are unordered.
+  - 
