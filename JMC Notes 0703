@@ -2,5 +2,26 @@ JMC Notes 0703
 
 Underscore.js
 
+Methods:
+_.compact
+_.findWhere (returns just the first match)
+_.where (returns all matches)
+_.pluck (extracts list of property values)
+_.uniq (rips out duplicates)
+_.sortBy
+
+
 - Utilities for arrays and objects
+- "git checkout ." wipes out local repo w online one
+- slots[] is array
+- Version info:
+	"_.VERSION" for underscore.js
+	"$().jquery" for jQuery
+- Library uses "_" for namespacing.  Avoids conflicts
+- _.compact
+- Falsy values: false, null, 0, "", undefined, NaN
+- Empty objects/arrays are considered truthy
+- underscore methods are non-destructive; almost all...
+- _.findWhere failes if null's are present in the list
+- Adding property to array: arr[x].<property> = <value>
 - 
