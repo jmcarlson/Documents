@@ -1,0 +1,41 @@
+JMC Notes 0709
+
+OOP Demo:
+
+- Smaller sites may not warrant OOP approach
+- Easy Manager???
+- SVG: scalable vector graphic
+- fontello.com: icon fonts generator
+  Ex) <i class="icon-trophy"></i>.  Class name matches name on website
+  Use <link> to include CSS file (fontello.css)
+
+- underscrore.js has _.random(x,y) which generates number between x and y
+
+- Value of 'this' in an anonymous function is set to window
+  Even if it's embedded inside a class/constructor structure
+  *** "var that = this;", "var self = this;".  Use this approach
+  to store the instance self that's used by anonymous function
+  This is called "losing it's context"
+
+- parseInt() for adding numbers to pixels.  Ex) parseInt("10px") + 50 will = 60
+
+- In a class/constructor, you can define a property inline
+  ex) this.el = $('<div>')
+
+- "var self = this" should be used; NOT this.self = this.  The latter would
+  still lose it's context
+
+Instance properties:
+	this.<property name>
+	*** executed everytime an instance is created
+
+Prototype properties:
+	constructor.prototype.<property name>
+	*** executed just once; way more efficient
+
+- method/properties are looked up realtime, up the prototype chain
+
+
+
+
+

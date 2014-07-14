@@ -24,4 +24,16 @@ _.sortBy
 - underscore methods are non-destructive; almost all...
 - _.findWhere failes if null's are present in the list
 - Adding property to array: arr[x].<property> = <value>
+
+
+Namespacing & Privacy
+
+- Encapsulation: avoiding naming conflicts and hiding data
+- "Revealing Module Pattern": put all code in function
+- "Immediately Invoked Function Expression" (IIFE):  can define a function
+  and immediately calling it at the same time
+  ex) var app = ( function(){ <func definition> } )();
+
+- Keep document ready section clean; App.init(), App.setupEvent(), App.renderTable() are examples
+  keeps entry points clear/clean
 - 

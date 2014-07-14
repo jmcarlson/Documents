@@ -1,0 +1,56 @@
+JMC Notes 0711
+
+Bootstrap!
+
+- Twitter bootstrap; getbootstrap.com
+- competitors: skeleton, semantic, foundation
+- It's a front-end framework
+- CDN name is "twitter-bootstrap"
+- normalize stylesheet is baked into bootstrap
+- Be careful which version; v2 is not great, use v3
+- Fully responsive system for multi column layouts
+- By default, bootstrap splits columns up into 12
+  *** To size, choose how to group the 12 columns
+- Bootstrap includes the media queries to adjust
+  the screen
+
+- Can nest grids within grids
+  *** Within 2x8x2 grid, you could split the 8
+  up into another 12 columns
+
+- <div class="row"> is grid container, must be nested into
+  either .container(fixed) or .container-fluid(floats to 100%) div
+
+ex) 2 x 8 x 2 grid
+
+<div class="row">
+	<div class="col-md-2"></div>
+	<div class="col-md-8"></div>
+	<div class="col-md-2"></div>
+</div>
+
+ex) 2 x 8 x 2 grid with nested 2 x 10
+
+<div class="row">
+	<div class="col-md-2"></div>
+	<div class="col-md-8"></div>
+		<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-10"></div>
+	</div>
+	<div class="col-md-2"></div>
+</div>
+
+- all "row" sections take up 100% of the area(screen or nested)
+- "md" in class name indicates device size
+
+- Do NOT change the padding around the columns.  It throws the calculations off entirely
+	*** Research gutter settings and Sass
+- Can use offset classes; col-md-offset-1
+
+- Can choose the modules in Bootstrap to deploy
+  *** Hit customize section, select modules and download the file
+  *** Must host on local server; check CDN file size vs local file size
+
+
+

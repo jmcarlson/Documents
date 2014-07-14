@@ -1,0 +1,18 @@
+JMC Notes 0707
+
+OOP:
+
+- 'this' uses current object context or 'host' object
+- 'new' constructor/operator.  Creates new instance of the object
+- Pascal naming convention for object constructors; an object used
+  with 'new'.  ex) var rian = new Student()
+
+Inheritance:
+
+1) set prototype of sublcass to parent class
+   ex) Snake.prototype = new Animal();
+2) invoke the constructor of superclass with
+   context of 'this'
+   ex) Animal.call(this,name);
+3) set the constructor property
+   ex) Snake.prototype.constructor = Snake;
