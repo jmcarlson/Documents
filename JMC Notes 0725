@@ -1,0 +1,41 @@
+JMC Notes 0725
+
+Heroku
+
+- Platform as a Service, PaaS
+- Download toolbelt.heroku.com
+- "heroku login"; gen pub key, id_rsa.pub
+
+Steps:
+
+1) Modify port nbr
+*** "app.listen(process.env.port || 9323, function() {}"
+
+2) Modify package.json
+*** Add "scripts" section for node application startup
+*** Test with "npm start"
+
+3) Create GIT repo
+*** "git init" (inside directory)
+
+4) Create heroku app
+*** "heroku create" 'quiet-fortress-6717.herokuapp.com'
+*** "git remote -v" lists remotes
+*** Creates remote for you; can add afterwards
+*** "git remote add heroku <url.git>".  'heroku' can be anything
+
+*** "Permission denied" error
+a) ssh-keygen -t rsa
+b) heroku keys add (id_rsa.pub when prompted)
+
+
+
+
+
+
+Other:
+- "heroku open" open html page
+- "heroku logs" returns server log
+- "heroku run bash" terminal access to account
+- "heroku logs --tail" will refresh terminal with msgs, realtime
+

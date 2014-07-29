@@ -22,7 +22,7 @@ _.sortBy
 - Falsy values: false, null, 0, "", undefined, NaN
 - Empty objects/arrays are considered truthy
 - underscore methods are non-destructive; almost all...
-- _.findWhere failes if null's are present in the list
+- _.findWhere fails if null's are present in the list
 - Adding property to array: arr[x].<property> = <value>
 
 

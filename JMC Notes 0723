@@ -1,0 +1,44 @@
+JMC Notes 0723
+
+Model-View-Controller (MVC)
+
+- concept/pattern; words aren't reserved
+- MVC can be in both client and server
+
+- Model: data related (arrays of data, filter logic)
+- View: UI
+- Controller: 'glue', connects everything together
+  ex) pulling data from model sending to view
+  ex) event handling
+  ex) messaging
+
+- MVC helps decouple things; easier to maintain
+- Stricter separation: put diff components in 
+  diff files
+
+Breakdowns of MVC:
+- event handlers with heavy jquery action
+- static html with embedded data
+
+Fix:
+- Put event handler/jquery-related functions in separate js???
+- ???
+
+
+- MVC on client, MC on server
+- Separate out client, server files???
+
+- Route handlers are controllers
+- "Front Controller" first or entry route(app.js)
+
+
+Resume:
+
+- Branded title very important, 7 seconds
+- Re-evaluate title
+- 
+
+Sections:
+- Branded title; catches eye "UX & Web Design Leader"
+- Professional Summary
+** max 4 lines, 

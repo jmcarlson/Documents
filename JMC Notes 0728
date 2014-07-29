@@ -1,0 +1,86 @@
+JMC Notes 0728
+
+- body-parser provides access to req.body for
+  post form data
+
+
+MongoDB
+- 10gen is owner(?), supporter
+- js interface
+- has console/shell
+- has node driver
+- Mongoose MPM module
+*** facilitates working with db
+- schemaless, great for prototyping	
+
+Bennies:
+- persistance
+- query efficiency (large datasets)
+*** indexing
+
+
+MongoDB
+- documents and collections
+- each js object is considered a doc (row)
+- can't store functions
+- multiple docs are stored in collections (table)
+*** of same type or class
+- 16MB limit for each document
+- ObjectId is globally unique
+- 
+
+Mongoose
+- does have a schema(?)
+- object oriented wrapper for native calls
+- introduces schema to MongoDB
+- Model: constructor for docs in a specific collection
+*** Schema...
+- 
+
+
+Commands:
+- "brew install mongodb"
+- "sudo mongod"
+- "mongo" shell
+- "use <db>" sets db, or creates it
+- "db.<collection>" creates collection
+- db.<collection>.find().  Quick way of listing docs
+- "show collections"
+- "db.users.find().sort({name: 1})"
+- "db.users.find().limit(1)"
+- "db.users.find().skip(1)"
+- "db.users.remove({name: 'Ben'})"
+- "db.users.update"
+- "db.users.find({_id: ObjectId("53d67876c87ade636b8e0ac9")})"
+- "db.visitors.update({_id: ObjectId("53d684efef71c110b1110906")}, {$set:{name: 'Jon'}})"
+*** Use $set for all updates.  Will update existing property or add but won't replace/touch
+    the other properties/values
+- "db.visitors.update({_id: ObjectId("53d6873eef71c110b1110908")},{$push: {favorite: 'elephant'}})"
+- "db.users.find().sort({name: -1})" sorts in reverse order
+
+mongoimport:
+
+multiline.txt
+[{
+	"name": "Raine"
+},
+{
+	"name": "Chris"
+},
+{
+	"name": "Gene"
+}]
+
+singleline.txt
+{"name": "Raine"}
+{"name": "Chris"}
+{"name": "Gene"}
+
+spreadsheet.csv
+name,age
+Raine,400
+Chris,397
+
+- mongoimport -d mongoimportTest -c users < multiline.txt --jsonArray
+- mongoimport -d mongoimportTest -c users < singleline.txt
+- mongoimport -d mongoimportTest -c users < spreadsheet.csv --type csv --headerline

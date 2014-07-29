@@ -1,0 +1,16 @@
+JMC Notes 0722
+
+- npm install -g generator-refactoru-express
+
+- Heroku uses package.json to install environment
+  for you
+
+- "git add -A" uses .gitignore file to exclude files/directories
+  from upload
+
+- Use Cheerio for screen scraping; jquery syntax for server
+
+
+Jade:
+
+- 

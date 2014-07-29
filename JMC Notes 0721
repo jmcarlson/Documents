@@ -1,0 +1,54 @@
+JMC Notes 0721
+
+Node.js
+
+- ECMA standard
+
+Diffs from browser:
+- no window object
+- no DOM
+- Node is module based; 'require' (like includes)
+  <script> in browser is similar to 'require'
+- low level access; filesystem, OS, networking
+- Chrome runtime engine pulled out of browser
+  and put into runtime environment
+
+
+CTRL-C: 
+CTRL-D: 
+
+- Can setup file like a script
+  use '#!/usr/bin/env node' in js file
+
+Node globals:
+- console
+- __filename
+- __dirname
+- process
+
+
+Require method:
+- local
+- core
+- npm
+
+- require does NOT include the added file to the namespace, default
+- put 'module.exports' at end of file; nothing else after
+
+- Object {}, Array []
+
+- require('os')
+
+
+Node Package Manager (npm)
+- online repo of packages
+- cmd tools
+- "npm init" 
+- "npm info <package>" lists info on package
+!!!! Put modules in each project directory; don't 
+  use global areas
+- "npm install --save" updates package.json file
+- "npm uninstall --save"
+- "npm install" will read package.json and download dependencies
+- Include package.json in git repo
+- 
