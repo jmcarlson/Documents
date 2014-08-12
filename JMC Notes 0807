@@ -1,0 +1,15 @@
+JMC Notes 0807
+
+Build Systems
+
+- Grunt, Gulp, Cake, etc
+
+- "npm install grunt --save -dev"
+  *** includes dev dependencies
+  *** create package.json first!!!
+
+- "npm install grunt-contrib-uglify --save-dev"
+- "npm install grunt-contrib-cssmin --save-dev"
+
+
+

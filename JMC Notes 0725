@@ -6,6 +6,17 @@ Heroku
 - Download toolbelt.heroku.com
 - "heroku login"; gen pub key, id_rsa.pub
 
+Read this!!!!
+https://devcenter.heroku.com/articles/getting-started-with-nodejs
+
+Re-deploy to existing heroku app:
+student[chapel]$ git remote add heroku git@heroku.com:quiet-fortress-6717.git
+student[chapel]$ git remote -v
+	heroku	git@heroku.com:quiet-fortress-6717.git (fetch)
+	heroku	git@heroku.com:quiet-fortress-6717.git (push)
+	origin	https://github.com/jmcarlson/chapel (feorigin	https://github.com/jmcarlson/chapel (push)
+
+
 Steps:
 
 1) Modify port nbr

@@ -1,0 +1,30 @@
+JMC Notes 0806
+
+User Authentication (Passport)
+
+- Lots of setup...
+- "Strategies" allow use of
+  whatever auth mechinism you 
+  want (local, Twitter, FB, etc)
+
+- Heroku provides SSL for free!
+
+package.json: (not complete list)
+ - bcrypt
+ - connect-flash
+ - cookie-parser
+
+- app.set, app.use order is important!
+
+- for 'secret' property, could use node process.env
+  environment variable
+
+- Idea: could use jade if statements to 
+  test for application security?
+
+- Typical middleware function:
+  "function(req, res, next, user)""
+
+- Heroku configuration; research Heroku Dev Center
+  Configuration vars
+

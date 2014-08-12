@@ -1,0 +1,65 @@
+JMC Notes 0730
+
+AJAX!!
+
+"Asynchronous Javascript and XML"
+
+- Allows http requests on a page 
+  without a page refresh
+- part of jQuery
+
+Mongoose:
+- Use mongoose.Schema syntax for complex
+  schema defs
+  ***  “rank: { type: Number, default: 0 }”
+
+Protocol agnostic syntax:
+“script(src=‘//code.jquery.com/jquery…’)
+- Will use http or https; which ever is available
+
+Grabbing form data:
+- “var url = $(‘[name=url]’).val()”
+*** must be unique name
+
+Required:
+$.post(‘/route’, {‘url’: url}, function(){})
+*** The object wrapper(url) allows the req.body.url ref
+
+File location:
+- “var link = require(process.cwd()+ ‘/models/link.js’)
+*** research process.cwd
+
+Sort with MongoDB:
+"Modlel.find({}).sort('rank').exec(function(error, results) {})"
+
+Refreshing links example:
+$('#links').empty().append(data.links.map(function(link) {
+	// Create DOM el
+	// return els
+}))
+
+
+Bootstrapping:
+- preloading data
+- "var links = JSON.parse('!{JSON.stringify(links)}');"
+
+
+
+
+
+
+// AJAX request
+$(document).on('submit', '#gettotal', function(e) {
+		e.preventDefault();
+		var nbr = $('#nbrinput').val();
+		$.post('/total', {n: nbr}, function(total) {
+			$('#total').text(total.x);
+		})
+	})
+// route handler
+app.post('/total', function(req, res) {
+	nbrTotal += +req.body.n;
+	res.send(200,{x:nbrTotal});
+})
+
+

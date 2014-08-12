@@ -1,0 +1,11 @@
+JMC Notes 0804
+
+Handlebars!!
+
+- Try to keep view-related stuff(HTML, etc)
+  out of the client-side js
+
+- Naming convention for handlebars template files: 'hbs' extension
+
+- "slug" example: 'this-is-a-slug-test' (all lower case with dashes instead of spaces)
+
